@@ -1,0 +1,415 @@
+
+/*全部分类菜单*/
+#page-all-nav .tit{
+	visibility: hidden;/*首页让“全部商品分类”文字选项隐藏*/
+}
+#page-all-nav .slider-nav{
+	visibility:visible;/*让首页显示“全部商品分类”的菜单*/
+}
+/*轮播导航*/
+.idx-banner .container{
+	height: 460px;
+	position: relative;
+	overflow: hidden;
+	
+}
+.idx-banner ul{
+	width: 20000px;
+	height: 460px;
+}
+.idx-banner li{
+	width: 1226px;
+	height: 460px;
+	position: relative;
+	float:left;
+}
+.idx-banner li img{
+	width: 1226px;
+	height: 460px;
+}
+.idx-banner li a{
+	position: absolute;
+	width: 990px;
+	height: 460px;
+	top: 0;
+	right: 0;
+}
+.idx-banner .btn{
+	position: absolute;
+	top: 50%;
+	left: 0;
+	margin-top: -35px;
+	cursor: pointer;
+}
+.idx-banner .btn.prev{
+	left:234px;
+}
+.idx-banner .btn.next{
+	left: 1177px;
+}
+.idx-banner .page{
+	position: absolute;
+	bottom: 30px;
+	right:0;
+	width: 100%;
+	height: 10px;
+	text-align: right;
+	padding-right: 35px;
+	z-index:1;
+}
+.idx-banner .page a{
+	display: inline-block;
+	margin: 0 5px;
+	width: 6px;
+	height: 6px;
+	border: 2px solid #fff;/*此处设置两个border属性颜色，是为了解决浏览器不兼容rgba的问题*/
+	border-color: hsla(0,0%,100%,.3);
+	border-radius: 10px;
+	background-color: #f5f5f5;
+	background-color: rgba(0,0,0,.4);
+}
+.idx-banner .page a:hover{
+	background-color: #fff;
+	background-color: rgba(255,255,255,0.3);
+	border-color: #757575;
+	border-color: rgba(0,0,0,0.4);
+	cursor: pointer;
+}
+.idx-banner .page span{
+	visibility: hidden;
+}
+/*菜单区域和广告位*/
+.idx-menu-ad{
+	overflow: hidden;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.idx-menu-ad .menu{
+	width: 214px;
+	height: 145px;
+	background-color: #5f5750;
+	float: left;
+	padding: 10px;
+}
+.idx-menu-ad .menu li{
+	width: 71px;
+	height: 61px;
+	float: left;
+	padding-top: 10px;
+	text-align: center;
+	color: #c8c5c3;
+	position: relative;
+
+}
+.idx-menu-ad .menu li i{
+	font-size: 20px;
+}
+.idx-menu-ad .menu li span{
+	display: block;
+	margin-top:10px;
+}
+.idx-menu-ad .menu li.bb:before{
+	content: "";
+	display: block;
+	width: 61px;
+	height: 1px;
+	background-color: #655d56;
+	position: absolute;
+	bottom: 0;
+	left: 5px;
+}
+.idx-menu-ad .menu li.br:after{
+	content:"";
+	display: block;
+	width: 1px;
+	height: 61px;
+	background-color: #655d56;
+	position: absolute;
+	right: 0;
+	top: 5px;
+}
+.idx-menu-ad .menu li:hover{
+	color: #fff;
+}
+.idx-menu-ad .pic{
+	display: block;
+	width: 310px;
+	height: 165px;
+	margin-left: 20px;
+	float: left;
+}
+.idx-menu-ad .pic img{
+	display: block;
+	width: 310px;
+	height: 165px;
+}
+/*广告图*/
+.idx-adv img{
+	width: 100%;
+	display: block;
+}
+/*大内容区*/
+.idx-container{
+	background-color:#f5f5f5;
+	margin-top: 40px;
+	overflow: hidden;/*子元素浮动对父元素产生高度塌陷的影响，所以此处解决方法为加入overflow：hidden*/
+	
+}
+.idx-title{
+	clear: both;
+}
+.idx-title .tit{
+	font-size: 22px;
+	color: #666;
+	line-height: 60px;
+}
+.idx-title .see-all{
+	float: right;
+	font-size: 16px;
+	color: #666;
+	position: relative;
+	top: 25px;
+}
+.idx-title .see-all:hover{
+	color: #ff6700;
+}
+.idx-title .list{
+	width: 400px;
+	float: right;
+	text-align: right;
+	position: relative;
+	top: 25px;
+    
+}
+.idx-title .list li{
+	display: inline-block;
+	margin-left: 26px;
+	font-size: 16px;
+}
+.idx-title .list li.active,
+.idx-title .list li:hover{
+	color: #ff6700;
+	border-bottom: 2px solid #ff6700;
+	cursor: pointer;
+}
+
+.idx-container .col-5{
+	width:234px;
+	margin-left: 14px;
+	float: left;
+	margin-bottom: 14px;
+}
+.idx-container .idx-box{
+	height: 614px;
+	clear: both;
+}
+.idx-container .adv-box{
+	float: left;
+	
+}
+.idx-container .adv-box.col-5{
+	margin-left: 0;
+}
+.idx-container .adv-box .single{
+	display: block;
+	width: 234px;
+	height: 614px;
+}
+.idx-container .adv-box .single img{
+	width: 234px;
+	height: 614px;
+	display: block;
+}
+.idx-container .adv-box .double{
+	display: block;
+	height: 300px;
+	margin-bottom:14px;	
+}
+
+.idx-container .adv-box .double img{
+	height: 300px;
+	width: 100%;
+}
+.idx-container .good-box{
+	float: right;
+	width: 992px;
+}
+.idx-container .idx-home .good-box{
+	display: none;
+}
+.idx-container .idx-home .active{
+	display: block;
+}
+.idx-container .good-item{
+	background-color: #fff;
+	height: 300px;
+}
+.idx-container .good-item{
+	background-color: #fff;
+	height: 300px;
+}
+.idx-container .good-item .pic img{
+	width: 160px;
+	height: 160px;
+	display: block;
+	margin: 20px auto;
+}
+.idx-container .good-item .name{
+	width: 210px;
+	margin: 10px auto;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	text-align: center;
+	
+}
+.idx-container .good-item .desc{
+	width: 210px;
+	color: #b0b0b0;
+	margin: 0 auto;
+	text-align: center;
+	font-weight: normal;
+}
+.idx-container .good-item .price{
+	display: block;
+	width: 210px;
+	text-align: center;
+	margin-top: 5px;
+	color: #ff6700;
+}
+.idx-container .good-item .price i{
+	color: #ff6700;
+}
+.idx-container .good-item .price span{
+	font-size: normal;
+	text-decoration: line-through;
+	margin-left: 5px;
+	color: #b0b0b0;
+}
+.idx-container .last{
+	background-color: #f5f5f5;
+	background-color: transparent;
+}
+.idx-container .last .good-top,
+.idx-container .last .good-more{
+	background-color: #fff;
+	height: 143px;
+	margin-bottom: 14px;
+}
+.idx-container .last .good-top .sm-img{
+	width: 80px;
+	height: 80px;
+	float: right;
+	margin-top: 35px;
+	margin-right: 20px;
+}
+.idx-container .last .good-top .sm-img img{
+	width: 80px;
+	height: 80px;
+	display: block;
+}
+.idx-container .last .txt{
+	margin-left: 30px;
+	overflow: hidden;
+}
+.idx-container .last .good-top .txt{
+	float: left;
+	margin-top: 35px;
+}
+.idx-container .last .good-top .txt h3{
+	width: 94px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.idx-container .last .good-top .txt p{
+	color: #ff6700;
+	line-height: 30px;
+}
+.idx-container .last .good-more{
+	position: relative;
+}
+.idx-container .last .good-more h3{
+	font-size: 18px;
+	margin-top: 50px;
+}
+.idx-container .last .good-more p{
+	line-height: 30px;
+}
+.idx-container .last .good-more i{
+	font-size: 60px;
+	position: absolute;
+	top: 40px;
+	right: 30px;
+}
+.idx-container .good-item:hover,
+.idx-container .adv-box .single:hover,
+.idx-container .adv-box .double:hover,
+.idx-container .last .good-top:hover,
+.idx-container .last .good-more:hover,
+.video .item:hover{
+	box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+.idx-container .last:hover{
+	box-shadow: none;
+}
+/*视频*/
+.video{
+	margin-bottom: 60px;
+	height: 285px;
+}
+.video .col-4{
+	width:285px;
+	margin-left: 14px;
+	float: left;
+	margin-bottom: 14px;
+}
+.video .item{
+	background-color: #fff;
+	height: 285px;
+}
+.video .item img{
+	width: 100%;
+}
+.video .item .pic，
+.video .item .pic img{
+	display: block;
+}
+.video .item .pic{
+	position: relative;
+}
+.video .item .pic .play{
+	display: block;
+	width: 36px;
+	height: 24px;
+	position: absolute;
+	left: 20px;
+	bottom: 10px;
+	border: 2px solid #fff;
+	border-radius: 12px;
+	text-align: center;
+}
+.video .item .pic i{
+	width: 0px;
+	height: 0px;
+	display: inline-block;
+	border-top: 6px solid transparent;
+	border-left: 10px solid #fff;
+	border-right: 10px solid transparent;
+	border-bottom: 6px solid transparent;
+	position: relative;
+	top: 4px;
+	left: 4px;
+}
+.video .item .pic:hover .play{
+	background-color: #ff6700;
+	border-color: #ff6700;
+}
+.video .item h3{
+	margin: 30px 40px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	font-weight: normal;
+	text-align: center;
+}
